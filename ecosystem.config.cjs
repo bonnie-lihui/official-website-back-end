@@ -23,7 +23,3 @@ module.exports = {
     min_uptime: '10s'
   }]
 };
-
-
-
-

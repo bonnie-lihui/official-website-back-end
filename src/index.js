@@ -1,7 +1,6 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import os from 'os';
 import proxyRouter from './routes/proxy.js';
 import silverRouter from './routes/silver/index.js';
 
@@ -55,4 +54,3 @@ const server = app.listen(app.get('port'), '0.0.0.0', function() {
   console.log(`🚀 服务器运行在:`);
   console.log(`   - 本地访问: http://localhost:${actualPort}`);
 });
-
