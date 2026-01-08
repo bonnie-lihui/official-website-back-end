@@ -1,0 +1,68 @@
+# 依赖 (Dependencies)
+node_modules/
+package-lock.json
+
+# 环境变量 (Environment Variables)
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+# 但保留 .env.example 作为模板
+!.env.example
+
+# 日志 (Logs)
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+# 操作系统文件 (OS Files)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE 和编辑器 (IDE & Editors)
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+*.sublime-project
+.project
+.classpath
+.settings/
+
+# 临时文件 (Temporary Files)
+tmp/
+temp/
+*.tmp
+*.bak
+
+# 测试覆盖率 (Test Coverage)
+coverage/
+.nyc_output/
+
+# 构建输出 (Build Output)
+dist/
+build/
+
+# 缓存 (Cache)
+.cache/
+.npm/
+.eslintcache
+
+# 其他 (Others)
+*.pid
+*.seed
+*.pid.lock
+
