@@ -75,7 +75,7 @@ router.get('/', async (req, res) => {
       
       // 构建优化后的返回结构
       const result = {
-        code: originalData.code,
+        code: 200,
         msg: originalData.msg,
         field_descriptions: fieldDescriptions,
         data: {
