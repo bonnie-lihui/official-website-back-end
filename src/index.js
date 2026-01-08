@@ -1,7 +1,6 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import proxyRouter from './routes/proxy.js';
 import silverRouter from './routes/silver/index.js';
 
 // 加载环境变量
@@ -27,11 +26,8 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-// 白银商品路由
+// silver路由
 app.use('/silver', silverRouter);
-
-// 代理路由
-app.use('/proxy', proxyRouter);
 
 // 404处理
 app.use((req, res) => {
@@ -46,7 +42,6 @@ app.use((err, req, res, next) => {
     message: err.message 
   });
 });
-
 
 // 启动服务器 - 自动获取IP以支持局域网访问
 const server = app.listen(app.get('port'), '0.0.0.0', function() {
